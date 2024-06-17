@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nathan Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+    <link rel="icon" type="imgage/jpg" href="./imgs//favicon.jpg"/>
+  </head>
+  <body>
+   <header>
+    <a href="#" class="logo-holder">
+        <div class="logo">NP</div>
+        <div class="logo-text">Nathan Portfolio</div>
+    </a>
+    <nav>
+        <ul id="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#chatbot">Chatbot</a></li>
+            <li><a href="#" class="button">Contact me</a></li>
+        </ul>
+
+        <a href="#" class="mobile-toggle" onclick="toggleMobileMenu()">
+            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10"/>
+              </svg>
+              
+        </a>
+    </nav>
+   </header>
+
+   <main>
+    <section class="hero container">
+        <div class="hero-blue">
+            <h1><small>Hi I'm</small>
+                Nathan Yennupiak
+            </h1>
+            <p>
+                Designer and Developer in Ghana who creates educational content on YouTube to teach others about HTML, CSS and Javascript.<br> <span>I'm interested in AI topics which is why I also add things like <span class="chatgpt">ChatGPT</span> into my projects these days.</span>
+            </p>
+
+            <div class="call-to-action">
+                <a href="/Sample_Resume_Template.pdf" class="button black">Viw Resume</a>
+                <a href="#" class="button white">Contact Me</a>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/Nathan-Yennupiak">
+                    <img src="./imgs/github.png" alt="Github" width="48px">
+                    <p>Github</p>
+                </a>
+                <a href="#">
+                    <img src="./imgs/linkedin.png" alt="LinkedIn" width="48px">
+                    <p>LinkedIn</p>
+                </a>
+            </div>
+        </div>
+        <div class="hero-yellow">
+            <img src="./imgs/nath.png" alt="Nathan Yennupiak" width="100%">
+        </div>
+    </section>
+    
+    <section class="logos container">
+        <div class="marquee">
+            <div class="track">
+
+                <!--Repeat Images for marquee to be infinite-->
+                <img src="imgs/html.png" alt="HTML" width="128">
+                <img src="imgs/css.png" alt="CSS" width="128">
+                <img src="imgs/javascript.png" alt="JS" width="128">
+                <img src="imgs/sass.png" alt="sass" width="128">
+                <img src="imgs/react.png" alt="React" width="128">
+                <img src="imgs/nextjs.png" alt="NextJS" width="128">
+                <img src="imgs/azure.png" alt="Azure" width="128">
+                <img src="imgs/vscode.png" alt="VS code" width="128">
+                <!--Repeat Images-->
+                <img src="imgs/html.png" alt="HTML" width="128">
+                <img src="imgs/css.png" alt="CSS" width="128">
+                <img src="imgs/javascript.png" alt="JS" width="128">
+                <img src="imgs/sass.png" alt="sass" width="128">
+                <img src="imgs/react.png" alt="React" width="128">
+                <img src="imgs/nextjs.png" alt="NextJS" width="128">
+                <img src="imgs/azure.png" alt="Azure" width="128">
+                <img src="imgs/vscode.png" alt="VS code" width="128">
+        </div>
+    </section>
+
+    <section id="skills" class="skills container">
+        <h2>
+            <small>About Me</small>
+            Skills
+        </h2>
+
+        <div class="holder-blue">
+            <div class="left-column">
+                <h3>Frontend</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>javascript</li>
+                    <li>React JS</li>
+                    <li>Next JS</li>
+                </ul>
+
+                <h3>Backend</h3>
+                <ul>
+                    <li>Node.js</li>
+                    <li>PHP</li>
+                    <li>Laravel</li>
+                    <li>Python</li>
+                    <li>FastApi</li>
+                </ul>
+            </div>
+            <div class="right-column">
+                <h3>A bit about me</h3>
+                <p> 
+                    Designer and Developer in Ghana who creates educational content on YouTube to teach others about HTML, CSS and Javascript. I'm interested in AI topics which is why I also add things like ChatGPT into my projects these days.
+                </p>
+                <p>
+                    I'm currently working on a project that uses Azure AI to create a chatbot that can help answer questions about web development.  I'm also working on a project that uses React and Next.js to create a portfolio website design that looks good.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="work-experience container">
+        <h2>
+            <small>
+                Recent
+            </small>
+            Work Experience
+        </h2>
+        <div class="jobs">
+            <article>
+                <figure>
+                    <div>
+                        <img src="imgs/workplace-2.jpg" alt="Workplace -1" width="100%">
+                    </div>
+                    <figcaption>
+                        Workplace -1
+                    </figcaption>
+                </figure>
+                <h3>Amplified Communications</h3>
+                <i>Full stack Web developer</i>
+                <div>2022 - Present</div>
+                <p>Developed and maintained scalable web applications for a leading digital marketing agency.</p>
+            </article>
+            <article>
+                <figure>
+                    <div>
+                        <img src="imgs/workplace-1.jpg" alt="Workplace -1" width="100%">
+                    </div>
+                    <figcaption>
+                        Workplace -2
+                    </figcaption>
+                </figure>
+                <h3>BitAlpha Innovations</h3>
+                <i>Mobile App Developer</i>
+                <div>2000 - 2020</div>
+                <p>Built cross-platform mobile applications using Flutter for an innovative tech startup.</p>
+            </article>
+            <article>
+                <figure>
+                    <div>
+                        <img src="imgs/workplace-3.jpg" alt="Workplace -3" width="100%">
+                    </div>
+                    <figcaption>
+                        Workplace -3
+                    </figcaption>
+                </figure>
+                <h3>Techmasters</h3>
+                <i>Fullstack Developer</i>
+                <div>2000 - 2020</div>
+                <p>Develop web and mobile app components at a software development firm.</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="projects" class="bento container">
+        <h2>
+            <small>
+                Previous
+            </small>
+            Completed Projects
+        </h2>
+        <div class="bento-grid">
+            <div class="bento-item">
+                <img src="imgs/bento-1.jpg" alt="Workplace -1" width="100%">
+            </div>
+            <a href="#" class="bento-item">
+                <img src="imgs/bento-2.jpg" alt="Workplace -1" width="100%">
+            </a href="#">
+            <a href="#" class="bento-item">
+                <img src="imgs/bento-3.jpg" alt="Workplace -1" width="100%">
+            </a href="#">
+            <a href="#" class="bento-item">
+                <img src="imgs/bento-4.jpg" alt="Workplace -1" width="100%">
+            </a href="#">
+            <a href="#" class="bento-item">
+                <img src="imgs/bento-5.jpg" alt="Workplace -1" width="100%">
+            </a href="#">
+            <a href="#" class="bento-item">
+                <img src="imgs/bento-7.jpg" alt="Workplace -1" width="100%">
+            </a href="#">
+        </div>
+    </section>
+
+    <section id="chatbot" class="chatbot container">
+        <h2>
+            <small>
+                Talk to me
+            </small>
+            Portfolio Chatbot
+        </h2>
+        <div class="chatbot-blue">
+            <div class="chat-info">
+                <h3>Azure AI Chatbot</h3>
+                <p>I've put together a chatbot here which knows all my skills, work experience and has a copy of my CV/Resume. You can use it to ask questions about me to get a better idea of who I am and what I've done.</p>
+                <p>You can also download my resume here if you want to take a look at it.  I'm currently looking for new opportunities so if you have a project you think I'd be a good fit for, please get in touch!</p>
+                <a href="./Sample_Resume_Template.pdf" class="button black">Download Resume</a>
+            </div>
+            <div class="chat-box">
+                <div class="scroll-area">
+                    <ul id="chat-log">
+                        <li>
+                            <span class="avatar bot">AI</span>
+                            <div class="message">
+                                Hi, I'm a friendly chatbot that lets you interactive with this portfolio and CV. How can I help?
+                            </div>
+                        </li>
+                        <li>
+                            <span class="avatar user">User</span>
+                            <div class="message">
+                                I have a question to ask you about this resume
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="chat-message">
+                    <input type="text" placeholder="Hey Adrian, what skills are you best at?">
+                    <button class="button black">Send</button>
+                </div>
+            </div>
+        </div>
+    </section>
+   </main>
+  </body>
+</html>
