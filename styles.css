@@ -157,6 +157,11 @@ header {
     padding-left: 30px;
     padding-right: 30px;
   }
+
+  @media (max-width: 768px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
   
 }
 
