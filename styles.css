@@ -1,3 +1,4 @@
+
 *,
 *::before,
 *::after {
@@ -16,8 +17,9 @@
   --yellow-400: #ffda4b;
   --yellow-800: #8b6f00;
   --blue: #0a61ae;
-  --blue-100: #e2f8ff;
+  /* --blue-100: #e2f8ff; */
   --blue-400: #61dafb;
+  --blue-100: #e6f7ff;
   --blue-800: #0a61ae;
 }
 
@@ -26,20 +28,25 @@ body {
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  font-size: 18px;
-  padding-bottom: 100px;
+  /* font-size: 18px; */
+
 }
+
+
+
+
 
 a {
   text-decoration: none;
   color: var(--blue);
 }
+
 a:hover {
   text-decoration: underline;
 }
 
 header {
-  background-color: white;
+  /* background-color: white; */
   padding: 10px;
   display: flex;
   justify-content: space-between;
@@ -221,6 +228,7 @@ h1 {
 .hero {
   display: flex;
   margin-top: 30px;
+  gap: 10px;
 
   @media (max-width: 1024px) {
     flex-direction: column;
@@ -233,7 +241,7 @@ h1 {
     flex-direction: column;
     justify-content: center;
     padding: 30px;
-    border-radius: 15px;
+    border-radius: 5px;
 
     span {
       color: var(--yellow-800);
@@ -283,8 +291,8 @@ h1 {
 
   .hero-yellow {
     flex: 1;
-    background-color: var(--yellow);
-    border-radius: 15px;
+    background-color: var(--blue);
+    border-radius: 5px;
     padding: 0px 30px;
     justify-content: center;
     align-items: center;
@@ -303,7 +311,7 @@ h1 {
     border-radius: 0;
   }
   background-color: var(--base-100);
-  border-radius: 30px;
+  border-radius: 10px;
   padding: 30px 0px;
   .marquee {
     width: 100vw;
@@ -361,7 +369,7 @@ h3 {
 .skills {
   .holder-blue {
     background-color: var(--blue-100);
-    border-radius: 30px;
+    border-radius: 10px;
     padding: 30px;
     display: flex;
 
@@ -369,7 +377,11 @@ h3 {
       flex-direction: column;
     }
     .left-column {
+      display: flex;
+      flex-direction: column;
       flex: 1;
+      justify-content: center;
+      align-items: center;
       ul {
         list-style: none;
         gap: 10px;
@@ -378,7 +390,7 @@ h3 {
 
         li {
           display: inline-block;
-          background-color: var(--blue-400);
+          background-color: var(--yellow);
           padding: 10px;
           border-radius: 5px;
           margin-bottom: 10px;
@@ -389,9 +401,13 @@ h3 {
     .right-column {
       background-color: white;
       color: var(--base);
-      border-radius: 30px;
+      border-radius: 10px;
       padding: 20px;
       flex: 1;
+
+      img{
+        border-radius: 10px;
+      }
 
       p {
         margin-bottom: 20px;
@@ -409,10 +425,11 @@ h3 {
     }
 
     article {
-      background-color: var(--yellow-100);
+      background-color: white;
       padding: 30px;
       border-radius: 10px;
       flex: 1px;
+      box-shadow: 10px 10px rgba(173, 216, 230, 0.432);
 
       h3 {
         font-size: 25px;
@@ -581,7 +598,7 @@ h3 {
 .chatbot {
 	.chatbot-blue {
 		background-color: var(--blue-100);
-		border-radius:30px;
+		border-radius:10px;
 		padding:30px;
 		gap:30px;
 		display:flex;
@@ -599,7 +616,7 @@ h3 {
 			flex:4;
 			background: var(--base-400);
       color: white;
-			border-radius:15px;
+			border-radius:10px;
 			padding:30px;
 			display:flex;
 			flex-direction:column;
