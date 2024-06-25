@@ -60,6 +60,7 @@ header {
   justify-content: space-between;
   align-items: center;
   top: 0;
+  z-index: 1000;
   margin: auto;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
  
@@ -393,7 +394,7 @@ h3 {
   .holder-blue {
     background-color: var(--blue-100);
     border-radius: 10px;
-    padding: 20px 10px;
+    padding: 20px 0px;
     box-shadow: 10px 10px var(--blue);
     display: flex;
 
