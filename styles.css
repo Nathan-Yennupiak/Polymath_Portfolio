@@ -294,17 +294,18 @@ h1 {
   }
 
   .hero-yellow {
+    display: flex;
     flex: 1;
     background-color: var(--blue);
     border-radius: 5px;
-    padding: 0px 30px;
+    padding: 10px 30px;
     justify-content: center;
     align-items: center;
     
 
     img {
-      margin-top: -50px;
-      max-width: 100%;
+      /* margin-top: -50px; */
+      max-width: 70%;
       margin-bottom: -10px;
     }
   }
