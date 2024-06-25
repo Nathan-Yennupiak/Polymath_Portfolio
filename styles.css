@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 *,
 *::before,
 *::after {
@@ -16,7 +16,8 @@
   --yellow-100: #fffbe6;
   --yellow-400: #ffda4b;
   --yellow-800: #8b6f00;
-  --blue: #0a61ae;
+  /* --blue: #0a61ae; */
+  --blue: #6747c7;
   /* --blue-100: #e2f8ff; */
   --blue-400: #61dafb;
   --blue-100: #e6f7ff;
@@ -28,7 +29,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  /* font-size: 18px; */
+  font-size: 18px;
 
 }
 
@@ -49,6 +50,7 @@ header {
   /* background-color: white; */
   padding: 10px;
   display: flex;
+  height: 90px;
   justify-content: space-between;
   align-items: center;
   top: 0;
@@ -100,13 +102,14 @@ header {
       gap: 5px;
       li {
         display: inline-block;
+        border-bottom: 2px solid transparent;
 
         a {
           display: inline-block;
           padding: 10px 20px;
           color: var(--base);
-          &:hover {
-            background-color: var(--base-100);
+         &:hover {
+          border-bottom: 2px solid var(--blue);
             border-radius: 5px;
             text-decoration: none;
           }
@@ -209,6 +212,7 @@ header {
 
 h1 {
   font-size: 50px;
+  font-family:'playfair';
   line-height: 1;
   margin-bottom: 10px;
 
@@ -229,6 +233,7 @@ h1 {
   display: flex;
   margin-top: 30px;
   gap: 10px;
+  box-shadow: 10px 10px var(--yellow);
 
   @media (max-width: 1024px) {
     flex-direction: column;
@@ -371,6 +376,7 @@ h3 {
     background-color: var(--blue-100);
     border-radius: 10px;
     padding: 30px;
+    box-shadow: 10px 10px var(--blue);
     display: flex;
 
     @media (max-width: 1024px) {
@@ -383,15 +389,22 @@ h3 {
       justify-content: center;
       align-items: center;
       ul {
+        display: flex;
         list-style: none;
         gap: 10px;
         margin-right: 100px;
         margin-bottom: 20px;
 
-        li {
-          display: inline-block;
-          background-color: var(--yellow);
+        
+
+        div {
+          display: flex;
+          gap: 10px;
+          justify-content: center;
+          align-items: center;
+          background-color: var(--blue);
           padding: 10px;
+          color: white;
           border-radius: 5px;
           margin-bottom: 10px;
         }
@@ -597,6 +610,7 @@ h3 {
 
 .chatbot {
 	.chatbot-blue {
+    box-shadow: 10px 10px rgba(173, 216, 230, 0.432);
 		background-color: var(--blue-100);
 		border-radius:10px;
 		padding:30px;
@@ -700,3 +714,33 @@ h3 {
 		}
 	}
 }
+
+#myBtn {
+  display: flex; /* Hidden by default */
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 50px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: var(--blue); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px 5px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  text-decoration: none;
+  border: 3px solid var(--yellow);
+
+  i{
+    font-size: 30px;
+  }
+}
+
+
+
+#myBtn:hover {
+  background-color: var(--base-400); /* Add a dark-grey background on hover */}
