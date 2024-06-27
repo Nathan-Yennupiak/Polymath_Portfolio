@@ -398,7 +398,7 @@ h3 {
 }
 .skills {
   animation-duration: 3s;
-  animation:alternate;
+  animation:alternate
   .holder-blue {
     background-color: var(--blue-100);
     border-radius: 10px;
