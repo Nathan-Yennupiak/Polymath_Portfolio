@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 *,
 *::before,
 *::after {
@@ -120,9 +120,10 @@ header {
       gap: 5px;
       li {
         display: inline-block;
-        border-bottom: 2px solid transparent;
+       
 
         a {
+          border-bottom: 2px solid transparent;
           display: inline-block;
           padding: 10px 20px;
           color: var(--base);
@@ -176,7 +177,7 @@ header {
 }
 
 .container {
-  max-width: 1440px;
+  /* max-width: 1440px; */
   overflow-x: hidden; /* Prevent horizontal overflow in container */
   margin: auto;
   gap: 20px;
@@ -210,11 +211,11 @@ header {
   }
 
   &.white {
-    background-color: white;
-    color: var(--base-800);
+    background-color: var(--blue);
+    color: white;
     &:hover {
-      background-color: var(--blue);
-      color: var(--blue-100);
+      background-color: var(--base-400);
+      color: white;
     }
   }
 
