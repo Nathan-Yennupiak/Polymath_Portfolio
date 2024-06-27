@@ -184,6 +184,7 @@ header {
   /* max-width: 1440px; */
   overflow-x: hidden; /* Prevent horizontal overflow in container */
   margin: auto;
+  padding: 0px 30px;
   gap: 20px;
   margin-top: 30px;
   margin-bottom: 30px;
