@@ -38,9 +38,10 @@ body {
 
 }
 
-h1 {
-  font-family: "Syne", sans-serif;
-}
+
+    /* h1 {
+      font-weight: 800;
+    } */
 
 
 
@@ -418,6 +419,7 @@ h3 {
         margin-bottom: 20px;
 
         @media (max-width: 768px) {
+          flex-wrap: wrap;
           ul {
             flex-wrap: wrap;
           }
