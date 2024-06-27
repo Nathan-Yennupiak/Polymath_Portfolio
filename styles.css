@@ -468,6 +468,7 @@ h3 {
   .jobs {
     display: flex;
     gap: 30px;
+    padding: 20px 0px;
     @media (max-width: 768px) {
       flex-direction: column;
     }
